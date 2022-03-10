@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Cadastro Pokémon</title>
+    </head>
+    <body>
+        <head>
+            <h1>Cadastro Pokémon</h1>
+        </head>
+        <nav>
+            <li><a href="#numero">Número do pokemon</a></li>
+            <li><a href="#nome">Nome do pokemon</a></li>
+            <li><a href="#tipo">Tipo do pokemon de acordo com as suas características</a></li>
+            <li><a href="#total">Poder Pokémon</a></li>
+            <li><a href="#geracao">Geração do Pokémon que foi introduzido</a></li>
+            <li><a href="#lendario">Indica se o Pokémon é lendário</a></li>
+            <li><a href="#cor">A cor do Pokémon</a></li>
+            <li><a href="#peso_altura">Peso é Altura do Pokémon</a></li>
+            <li><a href="#captura">Taxa de captura</a></li>
+        </nav>
+      <main>
+          <form action="">
+              
+               <section id="numero">
+                  <header>
+                      <h3>Insira o Número do Pokémon</h3>
+                  </header>
+                  <label for="numero">Número</label>
+                  <input id="campo-numerico" type="number" name="numero" value="">
+              </section>
+              
+              <section id="=nome">
+                  <header>
+                      <h3>Insira o nome do Pokémon</h3>
+                  </header>
+                  <label for="nome">Nome</label>
+                  <input id="campo-nome" type="text" name="nome" value=""> 
+              </section>
+              
+              <section id="tipo">
+                  <header>
+                      <h3>Escolha o tipo de Pokémon</h3>
+                  </header>
+                  <fieldset>
+                      <legend>Escolha no Maxímo dois Tipos</legend>
+
+                      <input type="checkbox" name="aço" id="aço" value="aço">
+                      <label for="aço">Aço</label>
+                      
+                      <input type="checkbox" name="agua" id="agua" value="agua">
+                      <label for="agua">Água</label>
+                     
+                      <input type="checkbox" name="dragao" id="dragao" value="dragao">
+                      <label for="dragao">Dragão</label>
+                    
+                      <input type="checkbox" name="eletrico" id="eletrico" value="eletrico" >
+                      <label for="eletrico">Elétrico</label>
+                    
+                      <input type="checkbox" name="fada" id="fada" value="fada">
+                      <label for="fada">Fada</label>
+
+                      <input type="checkbox" name="fantasma" id="fantasma" value="fantasma">
+                      <label for="fantasma">Fantasma</label><br>
+                  
+                      <input type="checkbox" name="fogo" id="fogo" value="fogo">
+                      <label for="fogo">Fogo</label>
+                      
+                      <input type="checkbox" name="gelo" id="gelo" value="gelo">
+                      <label for="gelo">Gelo</label>
+                      
+                      <input type="checkbox" name="inseto" id="inseto" value="inseto">
+                      <label for="inseto">Inseto</label>
+
+                      <input type="checkbox" name="lutador" id="lutador" value="lutador">
+                      <label for="lutador">Lutador</label>
+
+                      <input type="checkbox" name="normal" id="normal" value="normal">
+                      <label for="normal">Normal</label>
+
+                      <input type="checkbox" name="pedra" id="pedra" value="pedra">
+                      <label for="pedra">Pedra</label><br>
+
+                      <input type="checkbox" name="planta" id="planta" value="planta">
+                      <label for="planta">Planta</label>
+
+                      <input type="checkbox" name="psiquico" id="psiquico" value="psiquico">
+                      <label for="psiquico">Psíquico</label>
+
+                      <input type="checkbox" name="sombrio" id="sombrio" value="sombrio">
+                      <label for="sombrio">Sombrio</label>
+
+                      <input type="checkbox" name="terra" id="terra" value="terra">
+                      <label for="terra">Terra</label>
+                      
+                      <input type="checkbox" name="venenoso" id="venenoso" value="venenoso">
+                      <label for="venenoso">Venenoso</label><br>
+
+                      <input type="checkbox" name="voador" id="voador" value="voador">
+                      <label for="voador">Voador</label>
+                  </fieldset>
+              
+                <section id="total">
+                    <header>
+                        <h3>Poder Pokémon</h3>
+                    </header>
+                    <table>
+                            <th>Tipo</th>
+                            <th>Taxa</th>
+                         <tbody>
+                            
+                            <tr>
+                                <td>Ataque</td>
+                                <td>
+                                 <input type="number" name="ataque" id="ataque" step="1" min="1" max="255">
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>Defesa</td>
+                                <td>
+                                 <input type="number" name="defesa" id="defesa" step="1" min="1" max="255">
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>Ataque Especial</td>
+                                <td>
+                                 <input type="number" name="ataque_especial" id="ataque_especial" step="1" min="1" max="255">
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>Defesa Especial</td>
+                                <td>
+                                 <input type="number" name="defesa_especial" id="defesa_especial" step="1" min="1" max="255">
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>Velocidade</td>
+                                <td>
+                                 <input type="number" name="velocidade" id="velocidade" step="1" min="1" max="255">
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>HP</td>
+                                <td>
+                                 <input type="number" name="hp" id="hp" step="1" min="1" max="255">
+                                </td> 
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <th>Total</th>
+                            <th> <input type="number" name="total" id="total" step="1" min="1" max="255"></th>
+                        </tfoot>
+                    </table>
+                </section>
+                <section id="geracao">
+                    <header>
+                        <h3>Geração Pokémon</h3>
+                    </header>
+                    <label for="geracao">Geração</label>
+                    <input type="number" name="geracao" id="geracao" step="1" min="1" max="7">
+                </section>
+
+                <section id="lendario">
+                    <header>
+                        <h3>Lendário</h3>
+                    </header>
+                    <select name="lendario" id="lendario">
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </section>
+                
+                <section id="cor">
+                    <header>
+                        <h3>Cor do Pokémon</h3>
+                    </header>
+                    <select name="cor" id="cor">
+                        <option value="amarelo">Amarelo</option>
+                        <option value="azul">Azul</option>
+                        <option value="branco">Branco</option>
+                        <option value="cinza">Cinza</option>
+                        <option value="marrom">Marrom</option>
+                        <option value="preto">Preto</option>
+                        <option value="rosa">Rosa</option>
+                        <option value="roxo">Roxo</option>
+                        <option value="verde">Verde</option>
+                        <option value="vermelho">Vermelho</option>
+                    </select>
+                </section>
+                <section id="peso_altura">
+                    <header>
+                        <h3>Insira o Peso em Kg do Pokémon</h3>
+                    </header>
+                    <label for="peso">Peso</label>
+                    <input id="campo-numerico" type="number" name="peso" value="">
+                    
+                    <header>
+                        <h3>Insira Altura em Metros</h3>
+                    </header>
+                    <label for="altura">Altura</label>
+                    <input id="campo-numerico" type="number" name="altura" value="">
+                </section>
+                <section id="captura">
+                    <header>
+                        <h3>Taxa de Captura</h3>
+                    </header>
+                    <label for="taxa">Taxa</label>
+                    <input type="number" name="Taxa" id="Taxa" step="1" min="0" max="255">
+                </section>
+          </form>
+      </main>
+    </body>
+</html>
